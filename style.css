@@ -5,41 +5,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover; /* Adjust background to cover entire viewport */
+  background-size: 1000px; /* Fixed size for background */
   background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
   background-position: center center;
 }
 
 .paper {
   background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
-  background-size: cover; /* Adjust background to cover .paper element */
+  background-size: 500px; /* Fixed size for paper background */
   background-position: center center;
-  padding: 5vw; /* Responsive padding based on viewport width */
+  padding: 20px 100px; /* Fixed padding */
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
   position: absolute;
-  max-width: 90vw; /* Max width relative to viewport width */
 }
 
 .paper.heart {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
   padding: 0;
   border-radius: 50%;
 }
 
 .paper.image {
-  padding: 10px;
+  padding: 10px; /* Fixed padding */
 }
 
 .paper.image p {
-  font-size: 30px;
+  font-size: 30px; /* Fixed font size */
 }
 
 img {
-  max-height: 20vh; /* Max height relative to viewport height */
-  width: 100%;
+  max-height: 200px; /* Fixed height for images */
+  width: auto; /* Maintain aspect ratio */
   user-select: none;
 }
 
@@ -51,7 +50,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 150px;
+  background-size: 150px; /* Fixed size for background */
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.6;
@@ -59,19 +58,8 @@ img {
 
 p {
   font-family: 'Zeyada', cursive;
-  font-size: 50px; /* Initial font size */
+  font-size: 50px; /* Fixed font size */
   color: rgb(0,0,100);
   opacity: 0.75;
   user-select: none;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .paper {
-    padding: 10vw; /* Increase padding for smaller screens */
-  }
-
-  p {
-    font-size: 3vw; /* Font size relative to viewport width */
-  }
 }
